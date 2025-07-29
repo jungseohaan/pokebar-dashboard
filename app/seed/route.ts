@@ -2,7 +2,11 @@ import bcrypt from 'bcrypt';
 import postgres from 'postgres';
 import { invoices, customers, revenue, users } from '../lib/placeholder-data';
 
+<<<<<<< HEAD
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: false });
+=======
+const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
+>>>>>>> 065bce49baa6220a7f15f181df690c1414f192e0
 
 async function seedUsers() {
   await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
@@ -30,7 +34,11 @@ async function seedUsers() {
 }
 
 async function seedInvoices() {
+<<<<<<< HEAD
   //await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
+=======
+  await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
+>>>>>>> 065bce49baa6220a7f15f181df690c1414f192e0
 
   await sql`
     CREATE TABLE IF NOT EXISTS invoices (
@@ -56,7 +64,11 @@ async function seedInvoices() {
 }
 
 async function seedCustomers() {
+<<<<<<< HEAD
   //await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
+=======
+  await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
+>>>>>>> 065bce49baa6220a7f15f181df690c1414f192e0
 
   await sql`
     CREATE TABLE IF NOT EXISTS customers (

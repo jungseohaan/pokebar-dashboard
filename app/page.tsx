@@ -1,9 +1,12 @@
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+<<<<<<< HEAD
 import Image from 'next/image';
 
 import { sans, gothic, caveat  } from '@/app/ui/fonts';
+=======
+>>>>>>> 065bce49baa6220a7f15f181df690c1414f192e0
 
 export default function Page() {
   return (
@@ -13,10 +16,17 @@ export default function Page() {
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
+<<<<<<< HEAD
           <p className={`$caveat.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
             <strong>JB 방문을 환영합니다</strong> This is the example for the{' '}
             <a href="https://nextjs.org/learn/" className="text-blue-500">
               Admin Service
+=======
+          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
+            <strong>Welcome to Acme.</strong> This is the example for the{' '}
+            <a href="https://nextjs.org/learn/" className="text-blue-500">
+              Next.js Learn Course
+>>>>>>> 065bce49baa6220a7f15f181df690c1414f192e0
             </a>
             , brought to you by Vercel.
           </p>
@@ -29,6 +39,7 @@ export default function Page() {
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
+<<<<<<< HEAD
           <Image
             src="/hero-desktop.png"
             width={1000}
@@ -39,6 +50,10 @@ export default function Page() {
         </div>
       </div>
 
+=======
+        </div>
+      </div>
+>>>>>>> 065bce49baa6220a7f15f181df690c1414f192e0
     </main>
   );
 }
